@@ -1,0 +1,419 @@
+{
+  "luis_schema_version": "3.0.0",
+  "versionId": "0.1",
+  "name": "speechbank-b822",
+  "desc": "Default Intents for Azure Bot Service V2",
+  "culture": "en-us",
+  "intents": [
+    {
+      "name": "Agent transfer"
+    },
+    {
+      "name": "Check the bank card Balance"
+    },
+    {
+      "name": "Greeting"
+    },
+    {
+      "name": "Modify password"
+    },
+    {
+      "name": "Money Transfer"
+    },
+    {
+      "name": "None"
+    },
+    {
+      "name": "Total assets"
+    }
+  ],
+  "entities": [
+    {
+      "name": "Communication.SenderName",
+      "inherits": {
+        "domain_name": "Communication",
+        "model_name": "SenderName"
+      },
+      "roles": []
+    }
+  ],
+  "composites": [],
+  "closedLists": [],
+  "patternAnyEntities": [],
+  "regex_entities": [],
+  "prebuiltEntities": [
+    {
+      "name": "money",
+      "roles": []
+    }
+  ],
+  "model_features": [],
+  "regex_features": [],
+  "patterns": [],
+  "utterances": [
+    {
+      "text": "can you read my email from berry chris",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "Communication.SenderName",
+          "startPos": 27,
+          "endPos": 37
+        }
+      ]
+    },
+    {
+      "text": "change contact name from marina to daughter",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "Communication.SenderName",
+          "startPos": 25,
+          "endPos": 30
+        }
+      ]
+    },
+    {
+      "text": "change my payment password.",
+      "intent": "Modify password",
+      "entities": []
+    },
+    {
+      "text": "check the balance of the bank card.",
+      "intent": "Check the bank card Balance",
+      "entities": []
+    },
+    {
+      "text": "check the recent transaction records.",
+      "intent": "Check the bank card Balance",
+      "entities": []
+    },
+    {
+      "text": "connect customer service.",
+      "intent": "Agent transfer",
+      "entities": []
+    },
+    {
+      "text": "find out how much money is in my card.",
+      "intent": "Check the bank card Balance",
+      "entities": []
+    },
+    {
+      "text": "give ma liu 150 pieces.",
+      "intent": "Money Transfer",
+      "entities": [
+        {
+          "entity": "Communication.SenderName",
+          "startPos": 5,
+          "endPos": 10
+        }
+      ]
+    },
+    {
+      "text": "good afternoon",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "good evening",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "good morning",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "good night",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hello",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hello bot",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hey",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hi",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hi bot",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "hi please check my balance",
+      "intent": "Total assets",
+      "entities": []
+    },
+    {
+      "text": "hi, i am sharath",
+      "intent": "Greeting",
+      "entities": [
+        {
+          "entity": "Communication.SenderName",
+          "startPos": 9,
+          "endPos": 15
+        }
+      ]
+    },
+    {
+      "text": "hiya",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "how are you",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "how are you doing today?",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "how are you doing?",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "how are you today?",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "how much money do i have per card?",
+      "intent": "Check the bank card Balance",
+      "entities": []
+    },
+    {
+      "text": "how much money do i have?",
+      "intent": "Total assets",
+      "entities": []
+    },
+    {
+      "text": "i want artificial customer service.",
+      "intent": "Agent transfer",
+      "entities": []
+    },
+    {
+      "text": "i want to change the login password.",
+      "intent": "Modify password",
+      "entities": []
+    },
+    {
+      "text": "i want to change the password.",
+      "intent": "Modify password",
+      "entities": []
+    },
+    {
+      "text": "i want to change the payment password.",
+      "intent": "Modify password",
+      "entities": []
+    },
+    {
+      "text": "i want to check my accout balance",
+      "intent": "Total assets",
+      "entities": []
+    },
+    {
+      "text": "i want to transfer 1000 yuan to shen lang.",
+      "intent": "Money Transfer",
+      "entities": [
+        {
+          "entity": "Communication.SenderName",
+          "startPos": 32,
+          "endPos": 40
+        }
+      ]
+    },
+    {
+      "text": "i want to transfer money.",
+      "intent": "Money Transfer",
+      "entities": []
+    },
+    {
+      "text": "i would like to send 100rupees to sharath",
+      "intent": "Money Transfer",
+      "entities": [
+        {
+          "entity": "Communication.SenderName",
+          "startPos": 34,
+          "endPos": 40
+        }
+      ]
+    },
+    {
+      "text": "is there a real person?",
+      "intent": "Agent transfer",
+      "entities": []
+    },
+    {
+      "text": "is there any money in my bank card?",
+      "intent": "Check the bank card Balance",
+      "entities": []
+    },
+    {
+      "text": "is there anyone?",
+      "intent": "Agent transfer",
+      "entities": []
+    },
+    {
+      "text": "my water bottle is green.",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "oye",
+      "intent": "Greeting",
+      "entities": []
+    },
+    {
+      "text": "please read my latest text from james",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "Communication.SenderName",
+          "startPos": 32,
+          "endPos": 36
+        }
+      ]
+    },
+    {
+      "text": "please transfer the artificial customer service.",
+      "intent": "Agent transfer",
+      "entities": []
+    },
+    {
+      "text": "read miranda ' s text",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "Communication.SenderName",
+          "startPos": 5,
+          "endPos": 11
+        }
+      ]
+    },
+    {
+      "text": "read texts from kyla jack",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "Communication.SenderName",
+          "startPos": 16,
+          "endPos": 24
+        }
+      ]
+    },
+    {
+      "text": "read what greg martin is texting me",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "Communication.SenderName",
+          "startPos": 10,
+          "endPos": 20
+        }
+      ]
+    },
+    {
+      "text": "reliable contact from martin to dad",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "Communication.SenderName",
+          "startPos": 22,
+          "endPos": 27
+        }
+      ]
+    },
+    {
+      "text": "remittance to chen mou 10300.",
+      "intent": "Money Transfer",
+      "entities": [
+        {
+          "entity": "Communication.SenderName",
+          "startPos": 14,
+          "endPos": 17
+        }
+      ]
+    },
+    {
+      "text": "replace the payment password.",
+      "intent": "Modify password",
+      "entities": []
+    },
+    {
+      "text": "send $100 to sharath",
+      "intent": "Money Transfer",
+      "entities": [
+        {
+          "entity": "Communication.SenderName",
+          "startPos": 13,
+          "endPos": 19
+        }
+      ]
+    },
+    {
+      "text": "show me the deposit for each card.",
+      "intent": "Check the bank card Balance",
+      "entities": []
+    },
+    {
+      "text": "take a look at the transaction details for this month.",
+      "intent": "Check the bank card Balance",
+      "entities": []
+    },
+    {
+      "text": "there is a large deep dish pizza in your future.",
+      "intent": "None",
+      "entities": []
+    },
+    {
+      "text": "transfer 100 million to lao wang.",
+      "intent": "Money Transfer",
+      "entities": []
+    },
+    {
+      "text": "transfer 11,350 yuan to the state of stone.",
+      "intent": "Money Transfer",
+      "entities": []
+    },
+    {
+      "text": "update contact from martha to sister",
+      "intent": "None",
+      "entities": [
+        {
+          "entity": "Communication.SenderName",
+          "startPos": 20,
+          "endPos": 25
+        }
+      ]
+    },
+    {
+      "text": "what is my account balance?",
+      "intent": "Total assets",
+      "entities": []
+    },
+    {
+      "text": "what is my balance?",
+      "intent": "Total assets",
+      "entities": []
+    }
+  ]
+}
