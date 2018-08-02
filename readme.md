@@ -1,4 +1,4 @@
-**A Node.js chatbot that connects with Bing Speech API (For speech-to-text via websocket) and LUIS (For NLP).
+***A Node.js chatbot that connects with Bing Speech API (For speech-to-text via websocket) and LUIS (For NLP).***
 
 Try it here: https://speechbankbot.azurewebsites.net/
 
